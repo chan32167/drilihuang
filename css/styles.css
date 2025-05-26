@@ -204,9 +204,9 @@ a:hover {
     width: 350px;
     height: 350px;
     border: 5px solid rgba(255, 255, 255, 0.2);
-    transform: scale(1.15);
     transition: transform 0.3s ease;
     object-fit: cover;
+    will-change: transform; /* Optimize for animations */
 }
 
 /* Buttons */
@@ -457,6 +457,9 @@ footer.bg-dark p {
     }
     .masthead img {
         max-width: 280px;
+        width: 280px;
+        height: 280px;
+        transform: none; /* Remove transform on mobile for faster rendering */
     }
      .section-heading {
         font-size: 2rem;
@@ -473,6 +476,12 @@ footer.bg-dark p {
     }
     .service-card .service-icon i {
         font-size: 2.5rem !important;
+    }
+}
+
+@media (min-width: 768px) {
+    .masthead img {
+        transform: scale(1.15);
     }
 }
 

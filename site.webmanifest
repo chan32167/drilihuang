@@ -1,0 +1,26 @@
+{
+    "name": "Dr. I-Li Huang - Ginecólogo Obstetra",
+    "short_name": "Dr. I-Li Huang",
+    "description": "Ginecólogo obstetra especialista en control prenatal, partos, cesáreas y salud femenina integral en Quito.",
+    "icons": [
+        {
+            "src": "/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png",
+            "purpose": "any maskable"
+        },
+        {
+            "src": "/android-chrome-512x512.png",
+            "sizes": "512x512",
+            "type": "image/png",
+            "purpose": "any maskable"
+        }
+    ],
+    "theme_color": "#FFB3A7",
+    "background_color": "#ffffff",
+    "display": "standalone",
+    "start_url": "/",
+    "scope": "/",
+    "lang": "es-EC",
+    "categories": ["medical", "health", "healthcare"]
+} 
