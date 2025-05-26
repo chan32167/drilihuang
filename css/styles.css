@@ -79,7 +79,7 @@ a:hover {
     border-radius: 1rem;
     background-color: var(--primary-color);
     border: none;
-    display: inline-block;
+    display: block;
     margin: 0 auto 2rem;
 }
 
