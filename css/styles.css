@@ -72,6 +72,11 @@ a:hover {
     color: var(--primary-color) !important;
 }
 
+/* Improve contrast for accessibility */
+.text-muted {
+    color: #5A6C7D !important; /* Darker than Bootstrap's default #6c757d for better contrast */
+}
+
 /* Dividers */
 .divider {
     width: 3.25rem;
@@ -336,10 +341,11 @@ a:hover {
     transform: scale(1.1);
 }
 
-#contact .contact-detail-item h4 {
+#contact .contact-detail-item h3 {
     color: var(--dark-color);
     font-weight: 600;
     margin-bottom: 1rem;
+    font-size: 1.25rem;
 }
 
 #contact .contact-detail-item p {
