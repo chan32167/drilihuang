@@ -1,8 +1,5 @@
 /* Dr. I-Li Huang Website Styles */
 
-/* Import Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@400;500;600;700&display=swap');
-
 /* Custom variables */
 :root {
     --primary-color: #FFB3A7;
@@ -23,12 +20,14 @@ body {
     padding-top: 72px;
     color: var(--text-color);
     line-height: 1.6;
+    font-display: swap; /* Reduce layout shift from font loading */
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Poppins', sans-serif;
     font-weight: 600;
     color: var(--dark-color);
+    font-display: swap; /* Reduce layout shift from font loading */
 }
 
 a {
@@ -202,9 +201,12 @@ a:hover {
 
 .masthead img {
     max-width: 350px;
+    width: 350px;
+    height: 350px;
     border: 5px solid rgba(255, 255, 255, 0.2);
     transform: scale(1.15);
     transition: transform 0.3s ease;
+    object-fit: cover;
 }
 
 /* Buttons */
@@ -253,6 +255,7 @@ a:hover {
     border: 1px solid rgba(96, 125, 139, 0.1);
     position: relative;
     overflow: hidden;
+    min-height: 280px; /* Prevent layout shifts */
 }
 
 .service-card::before {
